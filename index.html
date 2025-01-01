@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -65,8 +66,32 @@
             </ul>
         </div>
         <div id="photonoti">
-            <div id="photocontant">
-                <img src="images/1.jpg" alt="Collage Photo" height="373px" width="760px ">
+            <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%"></div>
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%"></div>
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%"></div>
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%"></div>
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+            <div id="photocontant" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="images/1.jpg" alt="Collage Photo" height="373px" width="100%">
+                    </div>
+                    <div class="swiper-slide"> <img src="images/2.jpeg" alt="Collage Photo" height="373px" width="100%">
+                    </div>
+                    <div class="swiper-slide"> <img src="images/3.jpeg" alt="Collage Photo" height="373px" width="100%">
+                    </div>
+                    <div class="swiper-slide"> <img src="images/4.jpeg" alt="Collage Photo" height="373px" width="100%">
+                    </div>
+                    <div class="swiper-slide"> <img src="images/5.jpeg" alt="Collage Photo" height="373px" width="100%">
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
             </div>
             <div id="notificationside">
                 <div id="admissionopen">Admission Open</div>
@@ -188,26 +213,26 @@
                 <marquee width="100%">
                     <div class="scrollleft">
                         <img src="images/apple-logo.jpg" alt="">
-                    
-                    
+
+
                         <img src="images/tcs.jpg" alt="">
-                    
-                    
+
+
                         <img src="images/ibm-logo.jpg" alt="">
-                    
-                    
+
+
                         <img src="images/IMPETUS.jpg" alt="">
-                    
 
-                    
+
+
                         <img src="images/campus-logo1.jpg" alt="">
-                    
 
-                    
+
+
                         <img src="images/campus-logo3.jpg" alt="">
-                    
 
-                    
+
+
                         <img src="images/campus-logo5.jpg" alt="">
                     </div>
 
@@ -331,6 +356,20 @@
         </div>
 
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            autoplay: true,
+            loop:true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
+
 
 </html>
