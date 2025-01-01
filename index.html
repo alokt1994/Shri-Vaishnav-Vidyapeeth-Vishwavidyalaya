@@ -79,7 +79,8 @@
                     <div class="swiper-slide"> <img src="images/5.jpeg" alt="Collage Photo" height="373px" width="100%">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
             <div id="notificationside">
                 <div id="admissionopen">Admission Open</div>
@@ -350,10 +351,10 @@
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             autoplay: true,
-            loop:true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>
